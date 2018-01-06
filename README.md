@@ -1,4 +1,4 @@
-# Principle-from-motion
+# Principal Component Analysis
 
 # Introduction
 	Task: By using Principle Component Analysis algorithm to segment the principle component from the background part;	
