@@ -1,10 +1,10 @@
 # Principle-from-motion
 
-#Introduction
+# Introduction
 	Task: By using Principle Component Analysis algorithm to segment the principle component from the background part;	
 Environment: Matlab 2016a version;
 
-#Main Procedure
+# Main Procedure
 1, Image Processing
 	Load all the images into Matlab and transfer the RGB into Gray degree, by using function rgb2gray( ), imread( ).
 	Process all the 222 image matrix into one sample character matrix. In specific, each original matrix is transferred in to one column in the sample character matrix. Hence, we can obtain a 86400 * 222 character matrix.
@@ -24,10 +24,10 @@ Sample mean value = mean( );
 	We can obtain the principle component segmentation by using the original sample character matrix subtracting the matrix we obtained in the step 3. 
 	Finally, we can restore the 86400*222 matrix back to 222 image matrix and each matrix contains 240*360 pixels, which is the result of this PCA algorithm.
 
-#Result Exhibition
+# Result Exhibition
 	From the exhibition we can easily find out the outline of the principle component (a human and a car).
 
-Reflection
+# Reflection
 	Principal component analysis is a fantastic approach to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated. 
 	The number of principal components is less than or equal to the smaller of the number of original variables or the number of observations. 
 	This transformation is defined in such a way that the first principal component has the largest possible variance. 
