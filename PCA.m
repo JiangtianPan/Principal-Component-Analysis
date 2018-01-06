@@ -1,13 +1,13 @@
 clc
 clear all
 %%%1,image read
-file_path =  '.\images4\';% ???????  
-img_path_list = dir(strcat(file_path,'*.bmp'));%?????????jpg?????  
-img_num = length(img_path_list);%???????  
+file_path =  '.\images4\'; 
+img_path_list = dir(strcat(file_path,'*.bmp'));
+img_num = length(img_path_list);
 image = cell(1,img_num);
-if img_num > 0 %????????  
-        for j = 1:img_num %??????  
-            image_name = img_path_list(j).name;% ???  
+if img_num > 0  
+        for j = 1:img_num 
+            image_name = img_path_list(j).name;
             image{j} =  rgb2gray(imread(strcat(file_path,image_name)));  
           
              
